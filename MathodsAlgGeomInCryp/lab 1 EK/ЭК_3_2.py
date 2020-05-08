@@ -13,7 +13,7 @@ def Slozenie(x1, y1, x2, y2, p):
         x3 = (x**2 - ((x1 + x2) % p)) % p
         y3 = (x * ((x1 - x3) % p) - y1) % p
     else:
-        for i in range(2, znam):
+        for i in range(2, int(znam)):
             if znam % i == 0 and p % i == 0:
                 return 1    #Возвращаем 1 если НОД не равен единице
         znam = znam % p
